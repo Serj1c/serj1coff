@@ -1,0 +1,14 @@
+{
+  "name": "portfolio_1",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w dist/scss/ -o dist/css/ --recursive"
+  },
+  "author": "Sergej Isaev",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
