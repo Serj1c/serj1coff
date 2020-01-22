@@ -1,11 +1,15 @@
 //Widescreens
 @include MediaXl {
-
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 //Desktops & Laptops
 @include MediaLg {
-    
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }   
 }
 
 //Tablets & Small laptops
@@ -47,15 +51,18 @@
         }
     }
 
-    .about-info {
+    .info-about {
         grid-template-areas:
         'bioimage'
+        'bio'
         'bio'
         'job1'
         'job2'
         'job3';
-
         grid-template-columns: 1fr;
+    }
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -63,5 +70,8 @@
 @include MediaSm {
     main#home h1 {
         margin-top: 10vh;
+    }
+    .projects {
+        grid-template-columns: 1fr;
     }
 }
