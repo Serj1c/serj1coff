@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "portfolio",
   "main": "index.js",
+  "homepage": "https://Serj1c.github.io/portfolio_1",
   "scripts": {
-    "sass": "node-sass -w dist/scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w dist/scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Sergej Isaev",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.0"
   }
 }
