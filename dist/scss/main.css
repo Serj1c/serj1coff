@@ -102,7 +102,7 @@
   height: 250px;
   background: url();
   border-radius: 50%;
-  border: solid 3px yellow;
+  border: solid 3px orange;
 }
 
 .menu .nav-item {
@@ -118,7 +118,7 @@
 }
 
 .menu .nav-item.current > a {
-  color: yellow;
+  color: orange;
 }
 
 .menu .nav-link {
@@ -135,7 +135,7 @@
 }
 
 .menu .nav-link:hover {
-  color: yellow;
+  color: orange;
 }
 
 .menu .nav-item:nth-child(1) {
@@ -220,7 +220,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
   main#home h1 {
     margin-top: 10vh;
   }
@@ -292,7 +292,7 @@ header {
 }
 
 .text-secondary {
-  color: yellow;
+  color: orange;
 }
 
 main {
@@ -310,7 +310,7 @@ main a {
 }
 
 main a:hover {
-  color: yellow;
+  color: orange;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -326,54 +326,39 @@ main#home h1 {
 .info-about {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  /*grid-template-areas:
+    "bioimage bio bio"
+    "job1 job2 job3";*/
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
 
-.bio-image {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+/*.bio-image {
   grid-area: bioimage;
   margin: auto;
-  border: 3px solid yellow;
+  border: 3px solid $secondary-color;
   border-radius: 50%;
   height: 50%;
 }
-
 .bio {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
   grid-area: bio;
   font-size: 1.5rem;
 }
-
 .job-1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: job1;
 }
-
 .job-2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: job2;
 }
-
 .job-3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
   grid-area: job3;
 }
-
 .job {
-  background: #515151;
+  background: lighten($primary-color, 5);
   padding: 0.5rem;
-  border-bottom: yellow 3px solid;
-}
-
+  border-bottom: $secondary-color 3px solid;
+}*/
 .projects {
   display: -ms-grid;
   display: grid;
@@ -389,7 +374,7 @@ main#home h1 {
 
 .projects img:hover {
   opacity: 0.5;
-  border-color: yellow;
+  border-color: orange;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -421,7 +406,7 @@ main#home h1 {
 .boxes div:hover {
   cursor: pointer;
   padding: 0.5rem 1rem;
-  background: yellow;
+  background: orange;
   color: #000;
 }
 
@@ -437,7 +422,7 @@ main#home h1 {
 }
 
 .btn:hover, .btn-dark:hover, .btn-light:hover {
-  background: yellow;
+  background: orange;
   color: #000;
 }
 

@@ -1,7 +1,7 @@
 {
-  "name": "portfolio_1",
+  "name": "knittly",
   "version": "1.0.0",
-  "description": "portfolio",
+  "description": "tiny knitted world web page",
   "main": "index.js",
   "homepage": "https://Serj1c.github.io/portfolio_1",
   "scripts": {

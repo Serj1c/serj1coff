@@ -1,5 +1,5 @@
 $primary-color: #444;
-$secondary-color: yellow;
+$secondary-color: orange;
 $show-home-image: true;
 $home-image: url(../pics/several-scissors-1319460.jpg);
 $background-opacity: 0.8;
@@ -41,7 +41,7 @@ $background-opacity: 0.8;
 // Media Query Mixins
 
 @mixin MediaSm {
-  @media (max-width: 375px) {
+  @media screen and (max-width: 375px) {
     @content;
   }
 }

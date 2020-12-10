@@ -25,7 +25,6 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    //background: rgba(lighten($primary-color, 2), 0.5);
   }
 }
 a {
@@ -65,13 +64,13 @@ main {
 
 .info-about {
   display: grid;
-  grid-template-areas:
+  /*grid-template-areas:
     "bioimage bio bio"
-    "job1 job2 job3";
+    "job1 job2 job3";*/
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
-.bio-image {
+/*.bio-image {
   grid-area: bioimage;
   margin: auto;
   border: 3px solid $secondary-color;
@@ -95,7 +94,7 @@ main {
   background: lighten($primary-color, 5);
   padding: 0.5rem;
   border-bottom: $secondary-color 3px solid;
-}
+}*/
 
 //Work / Projects area
 
