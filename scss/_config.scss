@@ -1,7 +1,7 @@
 $primary-color: #444;
 $secondary-color: orange;
 $show-home-image: true;
-$home-image: url(../pics/several-scissors-1319460.jpg);
+$home-image: url(../pics/landing.jpg);
 $background-opacity: 0.8;
 
 @mixin easeOut {
@@ -28,8 +28,6 @@ $background-opacity: 0.8;
   }
 }
 
-// Set colors
-
 @function set-text-color($color) {
   @if (lightness($color) > 40) {
     @return #000;
@@ -37,8 +35,6 @@ $background-opacity: 0.8;
     @return #fff;
   }
 }
-
-// Media Query Mixins
 
 @mixin MediaSm {
   @media screen and (max-width: 375px) {

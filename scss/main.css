@@ -160,14 +160,14 @@
 
 @media screen and (min-width: 1171px) {
   .projects {
-    -ms-grid-columns: (1fr)[4];
+    -ms-grid-columns: (1fr);
         grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: (1fr);
         grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -210,12 +210,17 @@
     height: 150px;
   }
   .info-about {
-        grid-template-areas: "bioimage" "bio" "bio" "job1" "job2" "job3";
+        grid-template-areas: "bioimage"
+ "bio"
+ "bio"
+ "job1"
+ "job2"
+ "job3";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
   .projects {
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: (1fr);
         grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -245,7 +250,7 @@ body {
 }
 
 body#bg-img {
-  background: url(../pics/several-scissors-1319460.jpg);
+  background: url(../pics/landing.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -277,7 +282,7 @@ h1.sm-heading,
 h2.sm-heading,
 h3.sm-heading {
   margin-bottom: 2rem;
-  padding: 0.2rem 1rem;
+  padding: 0.2rem 0;
 }
 
 a {
@@ -326,44 +331,16 @@ main#home h1 {
 .info-about {
   display: -ms-grid;
   display: grid;
-  /*grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3";*/
-  -ms-grid-columns: (1fr)[3];
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
 
-/*.bio-image {
-  grid-area: bioimage;
-  margin: auto;
-  border: 3px solid $secondary-color;
-  border-radius: 50%;
-  height: 50%;
-}
-.bio {
-  grid-area: bio;
-  font-size: 1.5rem;
-}
-.job-1 {
-  grid-area: job1;
-}
-.job-2 {
-  grid-area: job2;
-}
-.job-3 {
-  grid-area: job3;
-}
-.job {
-  background: lighten($primary-color, 5);
-  padding: 0.5rem;
-  border-bottom: $secondary-color 3px solid;
-}*/
 .projects {
   display: -ms-grid;
   display: grid;
   grid-gap: 2rem;
-  -ms-grid-columns: (1fr)[3];
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(3, 1fr);
 }
 
