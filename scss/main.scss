@@ -50,7 +50,7 @@ main {
   a {
     padding: 0.5rem;
     &:hover {
-      color: $secondary-color;
+      color: $secondary-color-hover;
       @include easeOut();
     }
   }
@@ -68,8 +68,7 @@ main {
   grid-gap: 30px;
 }
 
-//Work / Projects area
-
+// Projects page
 .projects {
   display: grid;
   grid-gap: 2rem;
@@ -80,7 +79,7 @@ main {
 
     &:hover {
       opacity: 0.5;
-      border-color: $secondary-color;
+      border-color: $secondary-color-hover;
       @include easeOut;
     }
   }
@@ -103,25 +102,24 @@ main {
     &:hover {
       cursor: pointer;
       padding: 0.5rem 1rem;
-      background: $secondary-color;
-      color: set-text-color($secondary-color);
+      background: $secondary-color-hover;
+      color: set-text-color($secondary-color-hover);
       span {
-        color: set-text-color($secondary-color);
+        color: set-text-color($secondary-color-hover);
       }
     }
   }
 }
 
-//Styles for buttons
-
+// Buttons
 .btn {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
   &:hover {
-    background: $secondary-color;
-    color: set-text-color($secondary-color);
+    background: $secondary-color-hover;
+    color: set-text-color($secondary-color-hover);
   }
 }
 
@@ -136,7 +134,7 @@ main {
   color: #333;
 }
 
-// footer
+// Footer
 #main-footer {
   text-align: center;
   padding: 1rem;
