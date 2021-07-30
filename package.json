@@ -1,9 +1,9 @@
 {
-  "name": "knittly",
+  "name": "serj1c",
   "version": "1.0.0",
-  "description": "tiny knitted world web page",
+  "description": "personal website",
+  "homepage": "https://serj1c/github.io/serj1coff",
   "main": "index.js",
-  "homepage": "https://Serj1c.github.io/portfolio_1",
   "scripts": {
     "sass": "node-sass -w dist/scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
@@ -11,7 +11,9 @@
   "author": "Sergej Isaev",
   "license": "ISC",
   "dependencies": {
-    "gh-pages": "^2.2.0",
-    "node-sass": "^4.13.1"
+    "node-sass": "6.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
