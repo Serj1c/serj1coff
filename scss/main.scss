@@ -74,7 +74,7 @@ main {
   grid-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
   img {
-    width: 100;
+    width: 100%;
     border: 3px solid #fff;
 
     &:hover {
