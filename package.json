@@ -5,7 +5,7 @@
   "homepage": "https://serj1c/github.io/serj1coff",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w dist/scss/ -o dist/css/ --recursive",
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
   },
   "author": "Sergej Isaev",

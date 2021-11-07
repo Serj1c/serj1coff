@@ -52,9 +52,7 @@
   }
 
   .info-about {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
   }
   .projects {
     grid-template-columns: repeat(2, 1fr);
@@ -67,6 +65,9 @@
     margin-top: 10vh;
   }
   .projects {
+    grid-template-columns: 1fr;
+  }
+  .info-about {
     grid-template-columns: 1fr;
   }
 }
