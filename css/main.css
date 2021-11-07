@@ -334,6 +334,10 @@ main#home h1 {
   grid-gap: 30px;
 }
 
+.info-about p {
+  margin-bottom: 10px;
+}
+
 .projects {
   display: -ms-grid;
   display: grid;
@@ -418,3 +422,4 @@ main#home h1 {
   color: #fff;
   height: 60px;
 }
+/*# sourceMappingURL=main.css.map */
