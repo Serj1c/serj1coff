@@ -66,6 +66,10 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
+
+  p {
+    margin-bottom: 10px;
+  }
 }
 
 // Projects page

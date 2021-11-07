@@ -100,9 +100,10 @@
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  background: url();
+  background: url(../pics/face.jpeg);
+  background-size: cover;
   border-radius: 50%;
-  border: solid 3px orange;
+  border: solid 3px #ffd166;
 }
 
 .menu .nav-item {
@@ -118,7 +119,7 @@
 }
 
 .menu .nav-item.current > a {
-  color: orange;
+  color: #ffd166;
 }
 
 .menu .nav-link {
@@ -135,7 +136,7 @@
 }
 
 .menu .nav-link:hover {
-  color: orange;
+  color: #ffd166;
 }
 
 .menu .nav-item:nth-child(1) {
@@ -160,14 +161,14 @@
 
 @media screen and (min-width: 1171px) {
   .projects {
-    -ms-grid-columns: (1fr);
+    -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    -ms-grid-columns: (1fr);
+    -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -210,17 +211,14 @@
     height: 150px;
   }
   .info-about {
-        grid-template-areas: "bioimage"
- "bio"
- "bio"
- "job1"
- "job2"
- "job3";
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
   }
   .projects {
-    -ms-grid-columns: (1fr);
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -269,19 +267,19 @@ body#bg-img:after {
 h1,
 h2,
 h3 {
-  font-weight: 300;
+  font-weight: 100;
 }
 
 h1.lg-heading,
 h2.lg-heading,
 h3.lg-heading {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 h1.sm-heading,
 h2.sm-heading,
 h3.sm-heading {
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   padding: 0.2rem 0;
 }
 
@@ -297,7 +295,7 @@ header {
 }
 
 .text-secondary {
-  color: orange;
+  color: #ffd166;
 }
 
 main {
@@ -315,7 +313,7 @@ main a {
 }
 
 main a:hover {
-  color: orange;
+  color: #f8be3a;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -331,27 +329,31 @@ main#home h1 {
 .info-about {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr);
+  -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
+}
+
+.info-about p {
+  margin-bottom: 10px;
 }
 
 .projects {
   display: -ms-grid;
   display: grid;
   grid-gap: 2rem;
-  -ms-grid-columns: (1fr);
+  -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
 }
 
 .projects img {
-  width: 100;
+  width: 100%;
   border: 3px solid #fff;
 }
 
 .projects img:hover {
   opacity: 0.5;
-  border-color: orange;
+  border-color: #f8be3a;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -383,7 +385,7 @@ main#home h1 {
 .boxes div:hover {
   cursor: pointer;
   padding: 0.5rem 1rem;
-  background: orange;
+  background: #f8be3a;
   color: #000;
 }
 
@@ -399,7 +401,7 @@ main#home h1 {
 }
 
 .btn:hover, .btn-dark:hover, .btn-light:hover {
-  background: orange;
+  background: #f8be3a;
   color: #000;
 }
 
